@@ -1,3 +1,5 @@
+[![Build Status](https://travisci.octodemoapps.com/monaclone/reading-time-demo.svg?token=AJfRTGz3xTiK8PFe25xN&branch=master)](https://travisci.octodemoapps.com/monaclone/reading-time-demo)
+
 # Reading Time Demo
 Reading Time is a web application that lists staff recommended books.
 
