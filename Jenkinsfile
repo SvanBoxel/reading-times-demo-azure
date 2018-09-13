@@ -149,7 +149,7 @@ def allTests() {
 }
 
 def allCodeQualityTests() {
-    sonarServer()
+    // sonarServer()
     lintTest()
 }
 
