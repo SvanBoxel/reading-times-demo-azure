@@ -24,7 +24,6 @@ Reading Time requires Java and [Maven](https://maven.apache.org/). It uses an em
 mvn --version
 ```
 
-
 ### Running
 
 To run the application:
