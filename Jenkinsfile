@@ -327,10 +327,13 @@ def herokuDeploy (herokuApp) {
 }
 
 def getRepoSlug() {
-    tokens = "${env.JOB_NAME}".tokenize('/')
-    org = tokens[tokens.size()-3]
-    repo = tokens[tokens.size()-2]
-    return "${org}/${repo}"
+    // tokens = "${env.JOB_NAME}".tokenize('/')
+    // org = tokens[tokens.size()-3]
+    // repo = tokens[tokens.size()-2]
+    // // // echo scm.getUserRemoteConfigs()[0].getUrl()
+    // // // echo "${repo}/${env.BRANCH_NAME}"
+    // echo "${repo}/${env.repo}"
+    return "monaclone/reading-time-demo"
 }
 
 def getBranch() {
@@ -344,6 +347,7 @@ def createDeployment(ref, environment, description) {
         def payload = JsonOutput.toJson(["ref": "${ref}", "description": "${description}", "environment": "${environment}", "required_contexts": []])
         def apiUrl = "https://octodemo.com/api/v3/repos/${getRepoSlug()}/deployments"
         def response = sh(returnStdout: true, script: "curl -s -H \"Authorization: Token ${env.GITHUB_TOKEN}\" -H \"Accept: application/json\" -H \"Content-type: application/json\" -X POST -d '${payload}' ${apiUrl}").trim()
+        
         def jsonSlurper = new JsonSlurper()
         def data = jsonSlurper.parseText("${response}")
         return data.id
