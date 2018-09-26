@@ -1,7 +1,20 @@
 [![Build Status](https://travisci.octodemoapps.com/monaclone/reading-time-demo.svg?token=AJfRTGz3xTiK8PFe25xN&branch=master)](https://travisci.octodemoapps.com/monaclone/reading-time-demo)
 
-# Reading Time Demo
+# Reading Time
 Reading Time is a web application that lists staff recommended books.
+
+## Overview
+- [Project](#project)
+- [Installing](#installing)
+
+## Project
+To see what we're working on please check out our [Kanban board](https://octodemo.com/monaclone/reading-time-demo/projects/1). Found a bug or do you have a feature request? Check out our [issue overview](https://octodemo.com/monaclone/reading-time-demo/issues). 
+
+### Contributing
+Want to contribute? Great! Please read the [CONTRIBUTING](.github/CONTRIBUTING.md) file before contributing to this project.
+
+### License
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT) for this project.
 
 ## Installing
 
@@ -10,6 +23,7 @@ Reading Time requires Java and [Maven](https://maven.apache.org/). It uses an em
 ```
 mvn --version
 ```
+
 
 ### Running
 
@@ -42,9 +56,3 @@ To create and view the Maven reports:
 mvn site
 open target/site/index.html
 ```
-
-## Contributing
-Read the [CONTRIBUTING](.github/CONTRIBUTING.md) file before contributing to this project.
-
-## License
-See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
