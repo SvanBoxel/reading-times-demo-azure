@@ -8,6 +8,9 @@
 
 pool:
   vmImage: 'Ubuntu-16.04'
+  
+trigger:
+- *
 
 steps:
 - task: Maven@3
