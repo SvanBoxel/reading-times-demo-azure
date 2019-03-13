@@ -1,5 +1,6 @@
 package com.github.demo.model;
 
+
 /**
  * Model class for book.
  */
