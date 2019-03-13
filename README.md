@@ -1,7 +1,5 @@
 # Reading Time
-Reading Time is a web application that lists staff recommended books.
-
-`
+Reading Time is a web application that lists staff recommended books. :)(:
 
 ## Installing
 
@@ -48,3 +46,4 @@ Read the [CONTRIBUTING](.github/CONTRIBUTING.md) file before contributing to thi
 
 ## License
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
+
