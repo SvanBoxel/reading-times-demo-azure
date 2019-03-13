@@ -12,7 +12,6 @@ mvn --version
 
 ### Running
 
-
 To run the application:
 ```
 mvn clean install
