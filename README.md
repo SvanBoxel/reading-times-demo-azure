@@ -1,4 +1,4 @@
-# Reading Time
+# Reading Time demo
 Reading Time is a web application that lists staff recommended books.
 `
 
