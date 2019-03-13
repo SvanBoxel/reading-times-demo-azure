@@ -1,6 +1,7 @@
 # Reading Time
 Reading Time is a web application that lists staff recommended books.
 
+
 ## Installing
 
 ### Prerequisites
@@ -10,6 +11,7 @@ mvn --version
 ```
 
 ### Running
+
 
 To run the application:
 ```
