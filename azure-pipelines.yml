@@ -9,6 +9,9 @@
 pool:
   vmImage: 'Ubuntu-16.04'
 
+pr:
+- none
+
 steps:
 - task: Maven@3
   inputs:
