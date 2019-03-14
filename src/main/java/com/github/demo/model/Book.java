@@ -62,10 +62,7 @@ public class Book {
         return rating;
     }
 
-    public void setRating(long rating) {
-
-        String tempRating = "";
-
+    public void setRating(int rating) {
         if (rating < 0) {
             this.rating = 0;
         } else if (rating > 5) {
