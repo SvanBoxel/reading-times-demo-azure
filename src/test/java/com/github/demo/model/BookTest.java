@@ -48,6 +48,12 @@ public class BookTest {
         book.setRating(-1);
         Assert.assertEquals(0, book.getRating());
     }
+    
+    @Test
+    public void testValidRating() {
+        book.setRating(2);
+        Assert.assertEquals(2, book.getRating());
+    }
 
     @Before
     public void setUp() throws Exception {
