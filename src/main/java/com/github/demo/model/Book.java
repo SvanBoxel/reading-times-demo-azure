@@ -51,7 +51,7 @@ public class Book {
     }
 
     public void setCover(String cover) {
-        String tempA = ""
+        String tempA = "";
         this.cover = cover;
     }
 }
