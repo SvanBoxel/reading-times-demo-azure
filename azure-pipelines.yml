@@ -8,14 +8,12 @@
 
 pool:
   vmImage: 'Ubuntu-16.04'
-
 steps:
-- task: SonarSource.sonarqube.15B84CA1-B62F-4A2A-A403-89B77A063157.SonarQubePrepare@4
-  displayName: 'Prepare analysis on SonarQube'
+- task: SonarSource.sonarcloud.14d9cde6-c1da-4d55-aa01-2965cd301255.SonarCloudPrepare@1
+  displayName: 'Prepare analysis on SonarCloud'
   inputs:
-    SonarQube: SonarQube
-    projectKey: 'SvanBoxel_reading-times-demo-azure'
-    projectName: 'reading-times-demo-azure'
+    SonarCloud: Sonarcloud
+    organization: 'svanboxel-github'
     scannerMode: Other
     
 - task: Maven@3
@@ -30,9 +28,12 @@ steps:
     goals: 'package war:war'
     sonarQubeRunAnalysis: true
 
-- task: SonarSource.sonarqube.6D01813A-9589-4B15-8491-8164AEB38055.SonarQubeAnalyze@4
+- task: SonarSource.sonarcloud.ce096e50-6155-4de8-8800-4221aaeed4a1.SonarCloudAnalyze@1
   displayName: 'Run Code Analysis'
   
+- task: SonarSource.sonarcloud.38b27399-a642-40af-bb7d-9971f69712e8.SonarCloudPublish@1
+  displayName: 'Publish Quality Gate Result'
+
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(system.defaultworkingdirectory)'
