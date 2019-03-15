@@ -27,6 +27,7 @@ steps:
     SonarQube: SonarQube
     projectKey: 'SvanBoxel_reading-times-demo-azure'
     projectName: 'reading-times-demo-azure'
+    scannerMode: Other
 
 - task: SonarSource.sonarqube.6D01813A-9589-4B15-8491-8164AEB38055.SonarQubeAnalyze@4
   displayName: 'Run Code Analysis'
