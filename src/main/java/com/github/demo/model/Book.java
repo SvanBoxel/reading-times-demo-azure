@@ -11,6 +11,8 @@ public class Book {
 
     private String cover;
 
+    private long rating;
+
     public Book() {
 
     }
@@ -20,10 +22,11 @@ public class Book {
         this.title = title;
     }
 
-    public Book(String author, String title, String cover) {
+    public Book(String author, String title, String cover, int rating) {
         this.author = author;
         this.title = title;
         this.cover = cover;
+        this.setRating(rating);
     }
 
     public String getTitle() {
@@ -52,5 +55,19 @@ public class Book {
 
     public void setCover(String cover) {
         this.cover = cover;
+    }
+
+    public long getRating() {
+        return rating;
+    }
+
+    public void setRating(long rating) {
+        if (rating < 0) {
+            this.rating = 0;
+        } else if (rating > 5) {
+            this.rating = 5;
+        } else {
+            this.rating = rating;
+        }
     }
 }
