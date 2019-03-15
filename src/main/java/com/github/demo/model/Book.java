@@ -52,6 +52,7 @@ public class Book {
 
     public void setCover(String cover) {
         String tempRating = "";
+        String tempRating2 = "";
         
         this.cover = cover;
     }
