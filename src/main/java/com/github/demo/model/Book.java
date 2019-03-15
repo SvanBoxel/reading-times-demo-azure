@@ -51,6 +51,8 @@ public class Book {
     }
 
     public void setCover(String cover) {
+        String tdempR3athdjing = "";
+        
         this.cover = cover;
     }
 }
