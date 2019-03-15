@@ -18,7 +18,6 @@ public class Book {
     }
 
     public Book(String author, String title) {
-        String tempAuthor;
         this.author = author;
         this.title = title;
     }
@@ -63,9 +62,6 @@ public class Book {
     }
 
     public void setRating(long rating) {
-
-        String tempRating = "";
-
         if (rating < 0) {
             this.rating = 0;
         } else if (rating > 5) {
