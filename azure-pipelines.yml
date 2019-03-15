@@ -10,6 +10,14 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
+- task: SonarSource.sonarqube.15B84CA1-B62F-4A2A-A403-89B77A063157.SonarQubePrepare@4
+  displayName: 'Prepare analysis on SonarQube'
+  inputs:
+    SonarQube: SonarQube
+    projectKey: 'SvanBoxel_reading-times-demo-azure'
+    projectName: 'reading-times-demo-azure'
+    scannerMode: Other
+    
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -20,14 +28,6 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package war:war'
-
-- task: SonarSource.sonarqube.15B84CA1-B62F-4A2A-A403-89B77A063157.SonarQubePrepare@4
-  displayName: 'Prepare analysis on SonarQube'
-  inputs:
-    SonarQube: SonarQube
-    projectKey: 'SvanBoxel_reading-times-demo-azure'
-    projectName: 'reading-times-demo-azure'
-    scannerMode: Other
 
 - task: SonarSource.sonarqube.6D01813A-9589-4B15-8491-8164AEB38055.SonarQubeAnalyze@4
   displayName: 'Run Code Analysis'
