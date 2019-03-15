@@ -43,7 +43,7 @@ public class Book {
     }
 
     public String getDetails() {
-        return author + " | " + title;
+        return author + " - " + title;
     }
 
     public String getCover() {
