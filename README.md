@@ -41,6 +41,7 @@ mvn site
 open target/site/index.html
 ```
 
+
 ## Contributing
 Read the [CONTRIBUTING](.github/CONTRIBUTING.md) file before contributing to this project.
 
