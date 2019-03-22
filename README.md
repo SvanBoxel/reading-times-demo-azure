@@ -9,6 +9,7 @@ Reading Time requires Java and [Maven](https://maven.apache.org/). It uses an em
 mvn --version
 ```
 
+
 ### Running
 
 To run the application:
@@ -46,3 +47,4 @@ Read the [CONTRIBUTING](.github/CONTRIBUTING.md) file before contributing to thi
 
 ## License
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
+
