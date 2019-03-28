@@ -12,7 +12,6 @@ mvn --version
 ### Project board
 https://githubtraining.atlassian.net/secure/RapidBoard.jspa?rapidView=66&projectKey=RD&selectedIssue=RD-
 
-
 ### Running
 
 To run the application:
