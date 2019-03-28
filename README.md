@@ -9,6 +9,9 @@ Reading Time requires Java and [Maven](https://maven.apache.org/). It uses an em
 mvn --version
 ```
 
+### Project board
+https://githubtraining.atlassian.net/secure/RapidBoard.jspa?rapidView=66&projectKey=RD&selectedIssue=RD-
+
 ### Running
 
 To run the application:
@@ -46,3 +49,4 @@ Read the [CONTRIBUTING](.github/CONTRIBUTING.md) file before contributing to thi
 
 ## License
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
+
