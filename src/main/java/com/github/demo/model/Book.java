@@ -71,7 +71,7 @@ public class Book {
         } else if (rating > 5) {
             this.rating = 5;
         } else {
-            this.rating = 0;
+            this.rating = rating;
         }
     }
 }
